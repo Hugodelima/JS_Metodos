@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nome" type="text" placeholder="Nome">
+    <input id="email" type="email" placeholder="E-mail">
+    <button id="enviar">Enviar</button>
+    <p id="mensagem"></p>
+
+
+    <script>
+        const nome = document.getElementById("nome");
+        const email = document.getElementById("email");
+        const btnEnviar = document.getElementById("enviar");
+        const mensagem = document.getElementById("mensagem");
+
+        btnEnviar.addEventListener("click", () => {
+
+            if (nome.value !== "" && email.value !== "") {
+                mensagem.textContent = "formulaio enviado com sucesso!";
+
+            }else {
+                mensagem.textContent = "Por favor, preencha todos os campos."
+            }
+        });
+
+    </script>
+</body>
+</html>

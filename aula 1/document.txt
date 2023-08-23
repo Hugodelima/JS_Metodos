@@ -1,0 +1,46 @@
+1 - funcao para diogitar o nome , aparece no campo bem vindo fulano de tal
+
+formulario de inserir uma imagem do sem computador e vai selecionar o campo que vai colocar essa imagem  quanod clicar em enviar vai colocar a imagem nesse campo.
+
+
+
+document.getElementById("title1")
+document.getElementById("title1").textContent = "novo texto galera :D"
+document.querySelector("#title1")
+
+document.getElementsByClassName("novoparagrafo") #pegar todos p  classe paragrafo
+document.getElementsByClassName("novoparagrafo")[0] #pegar o primeiro p da class paragrafo
+document.getElementsByClassName("novoparagrafo")[0].textContent = ("alterar o texto haha") # alterar o paragrafo do primeiroa class do p
+document.getElementsByClassName("novoparagrafo")[1].textContent = ("chora")  # alterar o segundo paragrafo class do p
+
+document.getElementsByTagName("p") # pegar todos com a tag p
+let teste = document.getElementById("idmain") # atribuir este elemento do id dentro da variavavel "teste"
+teste.getElementsByTagName("p") # vai pegar da variavel p todos que estão dentro da variavel
+teste.getElementsByTagName("p")[0].textContent = "Jales" #aqui vai alterar o testo dentro dessa variavel, se tirar a posição ele não vai altearar pois o p se torna no html colecstions um objeto que precisa da posição
+
+document.querySelector("#idmain p") # ao inves da gambiarra acima so fazer fazer o query selector 
+document.querySelectorAll("#idsection p")
+document.querySelectorAll("#idsection p")[0].textContent = ("achou")
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The querySelector() Method</h2>
+
+<p>Add a background color to the first element with class="example":</p>
+
+<p class="example">I am a paragraph.</p>
+<p class="example">I am a paragraph.</p> 
+
+<script>
+document.querySelector(".example").style.backgroundColor = "blue"
+</script>
+
+</body>
+</html>

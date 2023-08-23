@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"> Alternar visibilidade</button>
+    <p id="paragrafo" style="display: none;">Este é um paragrafo que pode ser escondido</p>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const paragrafo = document.getElementById("paragrafo");
+
+        btn.addEventListener("click", () => {
+            if (paragrafo.style.display === "none" || paragrafo.style.display === "") {
+                paragrafo.style.display = "block";
+
+            } else {
+                paragrafo.style.display = "none";
+            }
+
+        });
+    </script>
+    
+</body>
+</html>
